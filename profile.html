@@ -111,34 +111,41 @@
             <h2 class="text-4xl md:text-5xl font-black text-amber-400 tracking-tight">PROFILE</h2>
         </div>
 
-        <!-- 기본 정보 -->
-        <div class="glass-panel rounded-2xl p-8 md:p-10 mb-8 fade-up hover:border-amber-400/40 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(251,191,36,0.1)] transition-all duration-300">
-            <h3 class="text-xl font-bold text-white mb-8 flex items-center gap-2">
-                <i class="fa-solid fa-id-card text-amber-400"></i> 기본 정보
-            </h3>
-            
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
-                <div>
-                    <p class="text-zinc-500 text-sm mb-2">이름</p>
-                    <p class="text-white font-semibold text-lg">박우진</p>
-                </div>
-                <div>
-                    <p class="text-zinc-500 text-sm mb-2">생년월일</p>
-                    <p class="text-white font-semibold text-lg">2000.11.03 (27)</p>
-                </div>
-                <div>
-                    <p class="text-zinc-500 text-sm mb-2">거주지역</p>
-                    <p class="text-white font-semibold text-lg">대구</p>
-                </div>
-                <div>
-                    <p class="text-zinc-500 text-sm mb-2">전공</p>
-                    <p class="text-white font-semibold text-lg">정보통신공학과</p>
+        <p class="text-center text-zinc-500 text-xs font-bold tracking-[0.3em] uppercase mb-6 fade-up">기본 정보</p>
 
+        <!-- 아이덴티티 카드 -->
+        <div class="glass-panel rounded-2xl p-8 md:p-12 mb-6 fade-up hover:border-amber-400/40 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(251,191,36,0.1)] transition-all duration-300 flex flex-col md:flex-row items-center gap-8 text-center md:text-left">
+            <div class="w-28 h-28 md:w-32 md:h-32 shrink-0 rounded-full bg-zinc-900 border-2 border-amber-400/40 flex items-center justify-center shadow-[0_0_30px_rgba(251,191,36,0.15)]">
+                <i class="fa-solid fa-user text-5xl text-amber-400"></i>
+            </div>
+            <div>
+                <p class="text-white font-black text-3xl md:text-4xl tracking-tight mb-4">박우진</p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-2">
+                    <span class="inline-flex items-center gap-2 bg-zinc-900/80 border border-white/5 text-zinc-300 text-sm px-4 py-1.5 rounded-full">
+                        <i class="fa-solid fa-graduation-cap text-amber-400"></i> 정보통신공학과
+                    </span>
+                    <span class="inline-flex items-center gap-2 bg-zinc-900/80 border border-white/5 text-zinc-300 text-sm px-4 py-1.5 rounded-full">
+                        <i class="fa-solid fa-location-dot text-amber-400"></i> 대구
+                    </span>
                 </div>
-                <div class="col-span-2 md:col-span-2">
-                    <p class="text-zinc-500 text-sm mb-2">MBTI</p>
-                    <p class="text-white font-semibold text-lg">ISTP</p>
+            </div>
+        </div>
+
+        <!-- 상세 스탯 카드 -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="glass-panel rounded-2xl p-8 fade-up hover:border-amber-400/40 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(251,191,36,0.1)] transition-all duration-300 text-center">
+                <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-zinc-900 border border-white/5 flex items-center justify-center">
+                    <i class="fa-solid fa-cake-candles text-2xl text-amber-400"></i>
                 </div>
+                <p class="text-zinc-500 text-sm mb-2">생년월일</p>
+                <p class="text-white font-bold text-xl">2000.11.03 (27)</p>
+            </div>
+            <div class="glass-panel rounded-2xl p-8 fade-up hover:border-amber-400/40 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(251,191,36,0.1)] transition-all duration-300 text-center">
+                <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-zinc-900 border border-white/5 flex items-center justify-center">
+                    <i class="fa-solid fa-brain text-2xl text-amber-400"></i>
+                </div>
+                <p class="text-zinc-500 text-sm mb-2">MBTI</p>
+                <p class="text-white font-bold text-xl">ISTP</p>
             </div>
         </div>
 
