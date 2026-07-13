@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>박우진 홈 | SSAFY 16기</title>
+    <title>박우진 스토리 | SSAFY 16기</title>
 
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -30,7 +30,7 @@
         body {
             color: #E2E8F0;
             overflow-x: hidden;
-            background-color: #09090b; /* zinc-950 */
+            background-color: #09090b;
         }
 
         .glass-panel {
@@ -157,9 +157,9 @@
             <a href="index.html" class="text-amber-400 font-black text-3xl tracking-tighter cursor-pointer hover:scale-105 transition-transform">WOOJIN</a>
 
             <div class="hidden md:flex gap-8 text-sm font-bold text-zinc-400">
-                <a href="index.html" class="nav-link active hover:text-white transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-full after:h-[2px] after:bg-amber-400">Home</a>
+                <a href="index.html" class="nav-link hover:text-white transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-amber-400 hover:after:w-full after:transition-all after:duration-300">Home</a>
                 <a href="profile.html" class="nav-link hover:text-white transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-amber-400 hover:after:w-full after:transition-all after:duration-300">Profile</a>
-                <a href="story.html" class="nav-link hover:text-white transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-amber-400 hover:after:w-full after:transition-all after:duration-300">Story</a>
+                <a href="story.html" class="nav-link active hover:text-white transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-full after:h-[2px] after:bg-amber-400">Story</a>
                 <a href="hobby.html" class="nav-link hover:text-white transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-amber-400 hover:after:w-full after:transition-all after:duration-300">Hobby</a>
             </div>
 
@@ -170,24 +170,59 @@
     </nav>
 
     <div id="mobile-menu" class="hidden fixed top-[68px] left-0 w-full glass-panel border-x-0 border-t-0 z-40 flex flex-col items-center py-6 gap-6 md:hidden">
-        <a href="index.html" class="mobile-nav-link text-amber-400 font-bold text-lg">Home</a>
-        <a href="story.html" class="mobile-nav-link text-zinc-400 hover:text-white font-bold text-lg">Story</a>
+        <a href="index.html" class="mobile-nav-link text-zinc-400 hover:text-white font-bold text-lg">Home</a>
+        <a href="story.html" class="mobile-nav-link text-amber-400 font-bold text-lg">Story</a>
         <a href="hobby.html" class="mobile-nav-link text-zinc-400 hover:text-white font-bold text-lg">Hobby</a>
         <a href="profile.html" class="mobile-nav-link text-zinc-400 hover:text-white font-bold text-lg">Profile</a>
     </div>
 
-    <section id="home" class="min-h-screen flex flex-col justify-center items-start relative px-6 text-left pt-20 max-w-6xl mx-auto">
-        <div class="z-10 fade-up w-full md:mt-[-50px]">
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-8 leading-snug tracking-tight">
-                <span class="text-amber-400">"깔끔한</span> 코드와<br class="hidden md:block"> 
-                <span class="text-amber-400">가치 있는</span> 웹 서비스를 지향합니다.<span class="text-amber-400">"</span>
-            </h1>
-            <p class="text-lg md:text-xl text-zinc-400 font-medium mb-12">
-                - SSAFY 16기 구미 4반 <strong class="text-white">박우진</strong> -
-            </p>
-            <a href="profile.html" class="bg-amber-400 hover:bg-amber-500 text-zinc-950 font-bold text-lg px-8 py-4 rounded-md shadow-[0_0_20px_rgba(251,191,36,0.2)] hover:shadow-[0_0_30px_rgba(251,191,36,0.4)] transition-all inline-flex items-center gap-2 group">
-                프로필 보기 <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
-            </a>
+    <section id="story" class="pt-32 pb-24 px-6 max-w-5xl mx-auto min-h-screen">
+        <h2 class="text-4xl font-bold text-center mb-16 fade-up text-white">
+            <span class="text-amber-400">STORY</span>
+        </h2>
+
+        <div class="timeline-container py-10">
+            <div class="timeline-item fade-up">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-panel">
+                    <div class="flex items-center gap-3 mb-1">
+                        <span class="text-3xl">😎</span>
+                        <h3 class="text-2xl font-bold text-white">정보통신공학 전공</h3>
+                    </div>
+                    <p class="text-amber-400 text-sm font-bold mb-3">2025.02</p>
+                    <p class="text-zinc-300 font-medium">
+                        <strong>영남대학교 정보통신공학 전공</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item fade-up">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-panel">
+                    <div class="flex items-center gap-3 mb-1">
+                        <span class="text-3xl">💯</span>
+                        <h3 class="text-2xl font-bold text-white">웹개발 부트캠프</h3>
+                    </div>
+                    <p class="text-amber-400 text-sm font-bold mb-3">2025.04</p>
+                    <p class="text-zinc-300 font-medium">
+                        <strong>6개월 부트캠프</strong> 수료 후 <strong>100곳</strong>에 지원했지만 결과는 전원 탈락. "포기? 오히려 오기가 생겼습니다."
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item fade-up">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-panel border-amber-400/30 shadow-[0_0_15px_rgba(251,191,36,0.1)]">
+                    <div class="flex items-center gap-3 mb-1">
+                        <span class="text-3xl">🤖</span>
+                        <h3 class="text-2xl font-bold text-amber-400">SSAFY</h3>
+                    </div>
+                    <p class="text-amber-400 text-sm font-bold mb-3">2026.07</p>
+                    <p class="text-zinc-300 font-medium">
+                        <strong>"AI 역량 및 융합 경험 부재"</strong>. 그 부족함을 채우기 위해 SSAFY 16기에 합류했습니다.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
